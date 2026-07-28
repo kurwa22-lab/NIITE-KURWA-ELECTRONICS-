@@ -1,320 +1,478 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NIITE KURWA ELECTRONICS</title>
+  <title>NIITE KURWA ELECTRONICS | Moshi Kilimanjaro</title>
 
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <meta name="description" content="NIITE KURWA ELECTRONICS - Huduma za Ufundi wa Umeme, CCTV, Electric Fence, Solar na Vifaa vya Electronics Moshi Kilimanjaro.">
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #222;
-  line-height: 1.6;
-}
+  <style>
 
-header {
-  background: linear-gradient(135deg, #071952, #0b5ed7);
-  color: white;
-  text-align: center;
-  padding: 45px 20px;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  border-radius: 50%;
-  background: white;
-  color: #071952;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 42px;
-  font-weight: bold;
-  border: 5px solid #ffd700;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
 
-header h1 {
-  margin-top: 18px;
-  font-size: 32px;
-}
+    /* HEADER */
 
-header p {
-  font-size: 18px;
-  margin-top: 8px;
-}
+    header {
+      background: linear-gradient(135deg, #071a2d, #063b5c, #007c91);
+      color: white;
+      text-align: center;
+      padding: 35px 20px 45px;
+    }
 
-.location {
-  margin-top: 12px;
-  font-weight: bold;
-  color: #ffd700;
-}
+    .logo {
+      width: 150px;
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 20px;
+    }
 
-.hero {
-  background: white;
-  text-align: center;
-  padding: 50px 20px;
-}
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
 
-.hero h2 {
-  color: #071952;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
+    header p {
+      font-size: 18px;
+      color: #d9f7ff;
+    }
 
-.hero p {
-  max-width: 750px;
-  margin: auto;
-  font-size: 18px;
-}
+    /* NAVIGATION */
 
-.button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 17px;
-}
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-.services {
-  padding: 45px 20px;
-  text-align: center;
-}
+    nav a {
+      color: #073b5c;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+    }
 
-.services h2 {
-  color: #071952;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
+    /* HERO */
 
-.cards {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: white;
+    }
 
-.card {
-  background: white;
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+    .hero h2 {
+      font-size: 32px;
+      color: #073b5c;
+      margin-bottom: 20px;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #555;
+    }
 
-.icon {
-  font-size: 42px;
-  margin-bottom: 12px;
-}
+    .hero-buttons {
+      margin-top: 30px;
+    }
 
-.card h3 {
-  color: #071952;
-  margin-bottom: 10px;
-}
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 7px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.about {
-  background: #071952;
-  color: white;
-  text-align: center;
-  padding: 45px 20px;
-}
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
 
-.about h2 {
-  color: #ffd700;
-  margin-bottom: 15px;
-}
+    .btn-call {
+      background: #073b5c;
+      color: white;
+    }
 
-.contact {
-  background: white;
-  text-align: center;
-  padding: 45px 20px;
-}
+    /* SERVICES */
 
-.contact h2 {
-  color: #071952;
-  margin-bottom: 15px;
-}
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.phone {
-  font-size: 22px;
-  font-weight: bold;
-  color: #0b5ed7;
-}
+    .services h2 {
+      font-size: 30px;
+      color: #073b5c;
+      margin-bottom: 35px;
+    }
 
-footer {
-  background: #050505;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-</style>
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 30px 20px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #073b5c;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #073b5c;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #e2f6ff;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #071a2d;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 25px;
+      background: #25D366;
+      color: white;
+      padding: 16px 30px;
+      border-radius: 35px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #020b14;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 27px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 350px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<header>
+  <!-- HEADER -->
 
-<div class="logo">NK</div>
+  <header>
 
-<h1>NIITE KURWA ELECTRONICS</h1>
+    <!-- BADILISHA logo.png KUWA JINA LA LOGO YAKO -->
+    <img src="logo.png"
+         alt="NIITE KURWA ELECTRONICS Logo"
+         class="logo">
 
-<p>Ufundi wa Umeme • CCTV • Electric Fence • Solar • Electronics</p>
+    <h1>NIITE KURWA ELECTRONICS</h1>
 
-<div class="location">
-📍 Tunapatikana Moshi, Kilimanjaro
-</div>
+    <p>
+      Ufundi wa Umeme • CCTV • Electric Fence • Solar • Electronics
+    </p>
 
-</header>
-
-
-<section class="hero">
-
-<h2>Karibu NIITE KURWA ELECTRONICS</h2>
-
-<p>
-Tunatoa huduma bora na za kitaalamu za ufundi wa umeme,
-wiring za majumbani, ofisini, viwandani na hotelini,
-pamoja na ufungaji wa CCTV camera. motorgate, Electric Fence, Solar
-na uuzaji wa vifaa mbalimbali vya umeme na electronics.kama vile friji 
-  pass.majiko ya umeme. Tv. sabufa. ving'amuzi.blender. Nk.
-</p>
-
-<a class="button"
-href="https://wa.me/255766972508"
-target="_blank">
-💬 Wasiliana Nasi WhatsApp
-</a>
-
-</section>
+  </header>
 
 
-<section class="services">
+  <!-- NAVIGATION -->
 
-<h2>🛠️ HUDUMA ZETU</h2>
+  <nav>
 
-<div class="cards">
+    <a href="#nyumbani">Nyumbani</a>
 
-<div class="card">
-<div class="icon">⚡</div>
-<h3>Ufundi wa Umeme</h3>
-<p>
-Wiring za majumbani, ofisini, viwandani, hotelini
-na maeneo mbalimbali.
-</p>
-</div>
+    <a href="#huduma">Huduma</a>
 
+    <a href="#kuhusu">Kuhusu Sisi</a>
 
-<div class="card">
-<div class="icon">📹</div>
-<h3>CCTV Camera</h3>
-<p>
-Ufungaji wa CCTV Camera na mifumo ya ulinzi
-kwa nyumba, biashara na taasisi.
-</p>
-</div>
+    <a href="#mawasiliano">Mawasiliano</a>
+
+  </nav>
 
 
-<div class="card">
-<div class="icon">🔒</div>
-<h3>Electric Fence</h3>
-<p>
-Ufungaji wa Electric Fence kwa ajili ya kuongeza
-usalama wa nyumba na maeneo ya biashara.
-</p>
-</div>
+  <!-- HERO -->
+
+  <section class="hero" id="nyumbani">
+
+    <h2>Karibu NIITE KURWA ELECTRONICS</h2>
+
+    <p>
+      Tunatoa huduma bora na za kitaalamu za ufundi wa umeme,
+      wiring za majumbani, ofisini, viwandani na hotelini.
+      Pia tunafanya ufungaji wa CCTV, Electric Fence,
+      Solar pamoja na kuuza vifaa mbalimbali vya umeme na electronics.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/255766972508"
+         target="_blank">
+
+         💬 Wasiliana WhatsApp
+
+      </a>
+
+      <a class="btn btn-call"
+         href="tel:0766972508">
+
+         📞 Piga Simu
+
+      </a>
+
+    </div>
+
+  </section>
 
 
-<div class="card">
-<div class="icon">☀️</div>
-<h3>Solar System</h3>
-<p>
-Ufungaji na ushauri wa mifumo ya Solar
-kwa matumizi mbalimbali.
-</p>
-</div>
+  <!-- SERVICES -->
+
+  <section class="services" id="huduma">
+
+    <h2>Huduma Zetu</h2>
+
+    <div class="cards">
 
 
-<div class="card">
-<div class="icon">🛒</div>
-<h3>Vifaa vya Umeme</h3>
-<p>
-Tunauza vifaa mbalimbali vya umeme na electronics
-kwa matumizi ya nyumbani na biashara.
-</p>
-</div>
+      <div class="card">
+
+        <div class="icon">⚡</div>
+
+        <h3>Ufundi wa Umeme</h3>
+
+        <p>
+          Wiring za majumbani, ofisini, viwandani,
+          hotelini na maeneo mbalimbali.
+        </p>
+
+      </div>
 
 
-<div class="card">
-<div class="icon">🏠</div>
-<h3>Wiring za Majumbani</h3>
-<p>
-Tunafanya wiring mpya na marekebisho ya mifumo
-ya umeme majumbani na kwenye majengo.
-</p>
-</div>
+      <div class="card">
 
-</div>
+        <div class="icon">📹</div>
 
-</section>
+        <h3>CCTV Camera</h3>
 
+        <p>
+          Ufungaji wa CCTV na mifumo ya ulinzi
+          kwa nyumba, biashara na ofisi.
+        </p>
 
-<section class="about">
-
-<h2>Kwa Nini Utuchague?</h2>
-
-<p>
-Tunazingatia ubora wa kazi, usalama na huduma nzuri kwa wateja.
-Tunapatikana Moshi, Kilimanjaro na tunatoa huduma kwa uaminifu
-na utaalamu.
-</p>
-
-</section>
+      </div>
 
 
-<section class="contact">
+      <div class="card">
 
-<h2>📞 WASILIANA NASI</h2>
+        <div class="icon">🔒</div>
 
-<p>Simu / WhatsApp</p>
+        <h3>Electric Fence</h3>
 
-<p class="phone">
-0766972508
-</p>
+        <p>
+          Ufungaji wa Electric Fence kwa ajili ya
+          kuongeza usalama wa nyumba na biashara.
+        </p>
 
-<a class="button"
-href="https://wa.me/255766972508"
-target="_blank">
-💬 Tuma Ujumbe WhatsApp
-</a>
-
-</section>
+      </div>
 
 
-<footer>
+      <div class="card">
 
-© 2026 NIITE KURWA ELECTRONICS  
-<br>
-Moshi, Kilimanjaro • Haki zote zimehifadhiwa
+        <div class="icon">☀️</div>
 
-</footer>
+        <h3>Solar</h3>
+
+        <p>
+          Ufungaji na ushauri wa mifumo ya Solar
+          kwa matumizi mbalimbali.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🛒</div>
+
+        <h3>Vifaa vya Umeme</h3>
+
+        <p>
+          Tunauza vifaa mbalimbali vya umeme
+          na electronics kwa matumizi tofauti.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🔧</div>
+
+        <h3>Huduma za Kitaalamu</h3>
+
+        <p>
+          Tunatoa huduma kwa uaminifu,
+          ubora na usalama katika kila kazi.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="kuhusu">
+
+    <h2>Kuhusu NIITE KURWA ELECTRONICS</h2>
+
+    <p>
+      Sisi ni wataalamu wa huduma za umeme na electronics.
+      Tunapatikana Moshi, Kilimanjaro na tunahudumia
+      wateja wanaohitaji huduma bora za ufundi wa umeme,
+      CCTV, Electric Fence, Solar na vifaa vya electronics.
+    </p>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="mawasiliano">
+
+    <h2>Wasiliana Nasi</h2>
+
+    <p>📍 Tunapatikana Moshi, Kilimanjaro</p>
+
+    <p>📞 Simu: 0766972508</p>
+
+    <p>💬 WhatsApp: 0766972508</p>
+
+    <a class="whatsapp"
+       href="https://wa.me/255766972508"
+       target="_blank">
+
+       💬 Tuma Ujumbe WhatsApp
+
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 NIITE KURWA ELECTRONICS.
+    Haki zote zimehifadhiwa.
+
+  </footer>
+
 
 </body>
 </html>
