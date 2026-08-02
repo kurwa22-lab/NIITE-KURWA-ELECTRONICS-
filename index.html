@@ -6,278 +6,337 @@
 
 <title>NIITE KURWA ELECTRONICS</title>
 
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+<meta name="description" content="NIITE KURWA ELECTRONICS - Huduma za Umeme, Solar, CCTV, Electric Fence na Vifaa vya Electronics Moshi, Kilimanjaro.">
 
-html{
-  scroll-behavior:smooth;
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
-  color:#152238;
-  line-height:1.6;
+font-family:Arial, sans-serif;
+background:#f5f7fa;
+color:#222;
+line-height:1.6;
 }
 
 header{
-  background:linear-gradient(135deg,#061a38,#06477d,#08a8c9);
-  color:white;
-  padding:20px 7% 70px;
-}
-
-.top{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+background:#071a2b;
+color:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
-  width:105px;
-  height:105px;
-  object-fit:contain;
-  background:white;
-  border-radius:18px;
-  padding:6px;
+font-size:22px;
+font-weight:bold;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-  font-weight:bold;
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#00e676;
 }
 
 .hero{
-  max-width:1200px;
-  margin:55px auto 0;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:40px;
-  align-items:center;
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("wiring.jpg") center/cover;
+color:white;
+}
+
+.hero-content{
+max-width:750px;
 }
 
 .hero h1{
-  font-size:clamp(40px,6vw,70px);
-  line-height:1.05;
-  margin:12px 0;
-}
-
-.hero h1 span{
-  color:#ffd34e;
+font-size:42px;
+margin-bottom:15px;
 }
 
 .hero p{
-  font-size:19px;
-  color:#e9f7ff;
-  max-width:650px;
-}
-
-.buttons{
-  margin-top:25px;
+font-size:19px;
+margin-bottom:25px;
 }
 
 .btn{
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
+display:inline-block;
+padding:13px 22px;
+margin:5px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
 
-.call{
-  background:#ffd34e;
-  color:#061a38;
+.btn-phone{
+background:#2196f3;
+color:white;
 }
 
-.wa{
-  background:#20d46b;
-  color:white;
-}
-
-.hero-img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  border-radius:25px;
-  box-shadow:0 20px 50px #0005;
+.btn-whatsapp{
+background:#00c853;
+color:white;
 }
 
 section{
-  max-width:1200px;
-  margin:auto;
-  padding:75px 7%;
+padding:60px 6%;
 }
 
 .title{
-  text-align:center;
-  margin-bottom:40px;
+text-align:center;
+margin-bottom:35px;
 }
 
 .title h2{
-  font-size:36px;
-  color:#062b5b;
+font-size:30px;
+color:#071a2b;
+margin-bottom:10px;
 }
 
 .title p{
-  color:#64748b;
+color:#666;
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:22px;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
-  background:white;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 10px 30px #0b234218;
-  transition:.3s;
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-7px);
+transform:translateY(-7px);
 }
 
-.card img{
-  width:100%;
-  height:190px;
-  object-fit:cover;
-}
-
-.card-body{
-  padding:22px;
+.card .icon{
+font-size:45px;
+margin-bottom:10px;
 }
 
 .card h3{
-  color:#062b5b;
-  margin-bottom:8px;
-}
-
-.features{
-  max-width:none;
-  background:#062b5b;
-  color:white;
-}
-
-.feature-grid{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-
-.feature{
-  padding:25px;
-  background:#ffffff12;
-  border:1px solid #ffffff22;
-  border-radius:18px;
-}
-
-.feature b{
-  font-size:20px;
-  color:#ffd34e;
+margin-bottom:10px;
+color:#071a2b;
 }
 
 .gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
 }
 
 .gallery img{
-  width:100%;
-  height:280px;
-  object-fit:cover;
-  border-radius:18px;
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.product{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+cursor:pointer;
+}
+
+.product-info{
+padding:18px;
+}
+
+.product-info h3{
+margin-bottom:8px;
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+color:#00a152;
+margin-bottom:12px;
+}
+
+.choose{
+background:#071a2b;
+color:white;
+text-align:center;
+border-radius:20px;
+padding:40px 20px;
+}
+
+.choose h2{
+margin-bottom:15px;
+}
+
+.choose select{
+width:100%;
+max-width:500px;
+padding:15px;
+border-radius:10px;
+border:none;
+font-size:16px;
+margin:15px 0;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stars{
+color:#ff9800;
+font-size:22px;
 }
 
 .contact{
-  background:linear-gradient(135deg,#eaf7ff,#fff);
-  max-width:none;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .contact-box{
-  background:white;
-  max-width:800px;
-  margin:auto;
-  padding:35px;
-  border-radius:24px;
-  box-shadow:0 10px 30px #0001;
-  text-align:center;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-box p{
+margin:10px 0;
 }
 
 footer{
-  background:#041329;
-  color:white;
-  text-align:center;
-  padding:30px;
+background:#071a2b;
+color:white;
+text-align:center;
+padding:30px 15px;
 }
 
-.float{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:10;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#00c853;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+z-index:2000;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
-.float a{
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:white;
-  text-decoration:none;
-  font-size:23px;
-  box-shadow:0 5px 20px #0004;
+.popup{
+display:none;
+position:fixed;
+z-index:3000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+align-items:center;
+justify-content:center;
+padding:20px;
 }
 
-.fcall{
-  background:#0b63ce;
+.popup img{
+max-width:95%;
+max-height:90%;
+object-fit:contain;
+border-radius:10px;
 }
 
-.fwa{
-  background:#20c967;
+.close{
+position:absolute;
+right:25px;
+top:15px;
+color:white;
+font-size:45px;
+cursor:pointer;
 }
 
-@media(max-width:800px){
+@media(max-width:700px){
 
-nav{
-  display:none;
+header{
+flex-direction:column;
+gap:10px;
 }
 
-.hero{
-  grid-template-columns:1fr;
-  text-align:center;
+nav a{
+font-size:12px;
+margin:4px;
 }
 
-.hero-img{
-  height:280px;
+.hero h1{
+font-size:30px;
 }
 
-.gallery{
-  grid-template-columns:1fr;
+.hero p{
+font-size:16px;
 }
 
-.top{
-  justify-content:center;
+section{
+padding:45px 5%;
 }
 
 }
+
 </style>
 </head>
 
@@ -285,256 +344,137 @@ nav{
 
 <header>
 
-<div class="top">
-
-<img
-src="e6c3e150-8baf-4eed-b13b-e4ce84689cc9.png"
-class="logo"
-alt="NIITE KURWA ELECTRONICS Logo">
+<div class="logo">
+NIITE KURWA ELECTRONICS
+</div>
 
 <nav>
-<a href="#huduma">Huduma</a>
-<a href="#gallery">Kazi Zetu</a>
+<a href="#home">Home</a>
+<a href="#services">Huduma</a>
+<a href="#gallery">Gallery</a>
+<a href="#products">Bidhaa</a>
+<a href="#reviews">Maoni</a>
 <a href="#contact">Wasiliana</a>
 </nav>
-
-</div>
-
-
-<div class="hero">
-
-<div>
-
-<p style="color:#ffd34e;font-weight:bold">
-KARIBU NIITE KURWA ELECTRONICS
-</p>
-
-<h1>
-Umeme na <span>Electronics</span> kwa Ubora.
-</h1>
-
-<p>
-Wataalamu wa ufundi wa umeme, CCTV,
-Electric Fence, Solar na uuzaji wa
-vifaa vya Electronics.
-</p>
-
-<p style="margin-top:12px;font-weight:bold">
-📍 Tunapatikana Moshi, Kilimanjaro
-</p>
-
-<div class="buttons">
-
-<a
-class="btn call"
-href="tel:0766972508">
-📞 Piga Simu
-</a>
-
-<a
-class="btn wa"
-href="https://wa.me/255766972508">
-💬 WhatsApp
-</a>
-
-</div>
-
-</div>
-
-
-<img
-src="Screenshot_20260730_234352.jpg"
-class="hero-img"
-alt="NIITE KURWA ELECTRONICS">
-
-</div>
 
 </header>
 
 
-<section id="huduma">
+<section class="hero" id="home">
 
-<div class="title">
+<div class="hero-content">
 
-<h2>Huduma Zetu</h2>
-
-<p>
-Tunakupa huduma bora na za kitaalamu
-</p>
-
-</div>
-
-
-<div class="cards">
-
-
-<article class="card">
-
-<img
-src="wiring="Ufundi wa umeme">
-
-<div class="card-body">
-
-<h3>
-⚡ Ufundi wa Umeme
-</h3>
+<h1>NIITE KURWA ELECTRONICS</h1>
 
 <p>
-Wiring za majumbani, ofisini,
-viwandani na hotelini pamoja
-na ufungaji wa DB na vifaa
-vya umeme.
+Suluhisho Bora la Umeme, Solar, CCTV, Electric Fence na Vifaa vya Electronics.
 </p>
 
-</div>
+<a class="btn btn-phone" href="tel:0766972508">
+📞 Piga Simu
+</a>
 
-</article>
-
-
-<article class="card">
-
-<img
-src="Screenshot_20260730_234301.jpg"
-alt="Electric Fence">
-
-<div class="card-body">
-
-<h3>
-🔒 Electric Fence
-</h3>
-
-<p>
-Ufungaji wa Electric Fence
-kwa usalama wa nyumba,
-biashara na maeneo mbalimbali.
-</p>
-
-</div>
-
-</article>
-
-
-<article class="card">
-
-<div class="card-body">
-
-<h3>
-📹 CCTV Camera
-</h3>
-
-<p>
-Ufungaji wa CCTV na mifumo
-ya ulinzi kwa nyumba, biashara,
-ofisi na maeneo mengine.
-</p>
-
-</div>
-
-</article>
-
-
-<article class="card">
-
-<div class="card-body">
-
-<h3>
-☀️ Solar
-</h3>
-
-<p>
-Ufungaji na ushauri wa mifumo
-ya Solar kwa matumizi mbalimbali.
-</p>
-
-</div>
-
-</article>
-
-
-<article class="card">
-
-<div class="card-body">
-
-<h3>
-🛒 Vifaa vya Electronics
-</h3>
-
-<p>
-Tunauza vifaa mbalimbali
-vya umeme na electronics
-kwa mahitaji yako.
-</p>
-
-</div>
-
-</article>
-
+<a class="btn btn-whatsapp"
+href="https://wa.me/255766972508?text=Habari%20NIITE%20KURWA%20ELECTRONICS,%20nahitaji%20huduma">
+🟢 WhatsApp
+</a>
 
 </div>
 
 </section>
 
 
-<section class="features">
+<section id="services">
 
-<div class="feature-grid">
+<div class="title">
 
+<h2>Huduma Zetu</h2>
 
-<div class="feature">
-
-<b>
-✓ Kazi Bora
-</b>
-
-<p>
-Tunazingatia ubora na usalama
-katika kila kazi.
-</p>
+<p>Tunakupa huduma bora na za kitaalamu</p>
 
 </div>
 
 
-<div class="feature">
+<div class="services">
 
-<b>
-✓ Utaalamu
-</b>
-
-<p>
-Huduma zinazofanywa kwa
-umakini na weledi.
-</p>
-
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Ufundi wa Umeme</h3>
+<p>Wiring, installation, maintenance na marekebisho ya mifumo ya umeme.</p>
 </div>
 
 
-<div class="feature">
-
-<b>
-✓ Uaminifu
-</b>
-
-<p>
-Tunajenga mahusiano ya muda
-mrefu na wateja wetu.
-</p>
-
+<div class="card">
+<div class="icon">☀️</div>
+<h3>Solar</h3>
+<p>Ufungaji na ushauri wa mifumo ya Solar kwa matumizi mbalimbali.</p>
 </div>
 
 
-<div class="feature">
+<div class="card">
+<div class="icon">📹</div>
+<h3>CCTV Camera</h3>
+<p>Ufungaji wa CCTV kwa nyumba, biashara na maeneo mbalimbali.</p>
+</div>
 
-<b>
-✓ Huduma ya Haraka
-</b>
 
-<p>
-Wasiliana nasi kwa mahitaji
-yako ya huduma.
-</p>
+<div class="card">
+<div class="icon">🔒</div>
+<h3>Electric Fence</h3>
+<p>Ufungaji wa Electric Fence kwa ajili ya kuongeza usalama.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🛒</div>
+<h3>Electronics</h3>
+<p>Tunapatikana kwa ajili ya vifaa mbalimbali vya Electronics.</p>
+</div>
 
 </div>
 
+</section>
+
+
+<section>
+
+<div class="choose">
+
+<h2>Unahitaji Huduma Gani?</h2>
+
+<p>Chagua huduma unayohitaji ili kuwasiliana nasi haraka.</p>
+
+<select id="serviceSelect">
+
+<option value="">-- Chagua Huduma --</option>
+
+<option value="Ufundi wa Umeme">
+⚡ Ufundi wa Umeme
+</option>
+
+<option value="Solar">
+☀️ Solar
+</option>
+
+<option value="CCTV Camera">
+📹 CCTV Camera
+</option>
+
+<option value="Electric Fence">
+🔒 Electric Fence
+</option>
+
+<option value="Vifaa vya Electronics">
+🛒 Vifaa vya Electronics
+</option>
+
+</select>
+
+<br>
+
+<a class="btn btn-whatsapp" id="serviceWhatsapp" href="#">
+💬 Uliza WhatsApp
+</a>
 
 </div>
 
@@ -545,53 +485,98 @@ yako ya huduma.
 
 <div class="title">
 
-<h2>
-Baadhi ya Kazi na Bidhaa Zetu
-</h2>
+<h2>Kazi Zetu na Bidhaa</h2>
 
-<p>
-Picha kutoka kwenye kazi
-na bidhaa zetu
-</p>
+<p>Gusa picha yoyote ili kuiona kwa ukubwa.</p>
 
 </div>
 
 
 <div class="gallery">
 
-  <!-- Picha za mwanzo -->
-  <img src="wiring.jpg" alt="Ufundi wa Umeme">
-  <img src="Kurwa.jpg" alt="NIITE KURWA ELECTRONICS">
-  <img src="ot_20260730_234301.jpg" alt="Bidhaa za Electronics">
+<img src="wiring.jpg" alt="Ufundi wa Umeme">
 
-  <!-- Picha nyingine -->
-  <img src="0801-WA0013.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="0801-WA0023.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="0_001904.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="60801-WA0019.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="60801-WA0024.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="801-WA0020.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="IMG-20.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
-  <img src="IMG-2026.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+<img src="Kurwa.jpg" alt="NIITE KURWA ELECTRONICS">
+
+<img src="ot_20260730_234301.jpg" alt="Bidhaa za Electronics">
+
+<img src="0801-WA0013.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="0801-WA0023.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="0_001904.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="60801-WA0019.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="60801-WA0024.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="801-WA0020.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="IMG-20.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
+
+<img src="IMG-2026.jpg" alt="Kazi za NIITE KURWA ELECTRONICS">
 
 </div>
 
+</section>
+
+
+<section id="products">
+
+<div class="title">
+
+<h2>Bidhaa Zetu</h2>
+
+<p>Wasiliana nasi kwa bidhaa na bei zilizopo.</p>
+
+</div>
+
+
+<div class="products">
+
+
+<div class="product">
+
+<img src="Kurwa.jpg" alt="Electronics">
+
+<div class="product-info">
+
+<h3>Vifaa vya Electronics</h3>
+
+<div class="price">
+Wasiliana nasi
+</div>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/255766972508?text=Habari,%20nahitaji%20kujua%20bidhaa%20mlizonazo">
+Uliza WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
 <img src="wiring.jpg" alt="Ufundi wa Umeme">
 
+<div class="product-info">
 
-<img
-src="Screenshot_20260730_234352.jpg"
-alt="Bidhaa za Electronics">
+<h3>Huduma za Umeme</h3>
 
+<div class="price">
+Uliza Bei
+</div>
 
-<img
-src="Screenshot_20260730_234301.jpg"
-alt="Electric Fence">
+<a class="btn btn-whatsapp"
+href="https://wa.me/255766972508?text=Habari,%20nahitaji%20huduma%20ya%20umeme">
+Uliza WhatsApp
+</a>
 
+</div>
 
-<img
-src="Screenshot_20260730_001957.jpg"
-alt="Electrical Installation">
+</div>
 
 
 </div>
@@ -599,163 +584,221 @@ alt="Electrical Installation">
 </section>
 
 
-<section id="contact" class="contact">
+<section id="reviews">
 
 <div class="title">
 
-<h2>
-Wasiliana Nasi
-</h2>
+<h2>⭐ Maoni ya Wateja</h2>
+
+<p>Wateja wetu wanazungumzia huduma zetu.</p>
+
+</div>
+
+
+<div class="reviews">
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
 
 <p>
-Tupo tayari kukuhudumia
+“Huduma nzuri na kazi imefanyika kwa umakini. Nawashauri sana.”
 </p>
+
+<strong>Mteja wetu</strong>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+“Nilipata huduma nzuri na ya haraka. Asante NIITE KURWA ELECTRONICS.”
+</p>
+
+<strong>Mteja wetu</strong>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+“Huduma bora na mawasiliano mazuri.”
+</p>
+
+<strong>Mteja wetu</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="title">
+
+<h2>Wasiliana Nasi</h2>
+
+<p>Tupo tayari kukuhudumia.</p>
+
+</div>
+
+
+<div class="contact">
+
+<div class="contact-box">
+
+<h3>NIITE KURWA ELECTRONICS</h3>
+
+<p>📍 Moshi, Kilimanjaro</p>
+
+<p>📞 0766 972 508</p>
+
+<p>🟢 WhatsApp inapatikana</p>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/255766972508?text=Habari%20NIITE%20KURWA%20ELECTRONICS">
+Wasiliana WhatsApp
+</a>
 
 </div>
 
 
 <div class="contact-box">
 
-<h3>
-NIITE KURWA ELECTRONICS
-</h3>
+<h3>Huduma</h3>
 
-<p>
-📍 Moshi, Kilimanjaro
-</p>
+<p>⚡ Ufundi wa Umeme</p>
 
-<p>
-📞 0766 972 508
-</p>
+<p>☀️ Solar</p>
 
+<p>📹 CCTV</p>
 
-<div class="buttons">
+<p>🔒 Electric Fence</p>
 
-
-<a
-class="btn call"
-href="tel:0766972508">
-
-📞 Piga Simu Sasa
-
-</a>
-
-
-<a
-class="btn wa"
-href="https://wa.me/255766972508">
-
-💬 Tuma WhatsApp
-
-</a>
-
+<p>🛒 Electronics</p>
 
 </div>
 
 </div>
 
 </section>
-
-
-<div class="float">
-
-
-<a
-class="fcall"
-href="tel:0766972508">
-☎
-</a>
-
-
-<a
-class="fwa"
-href="https://wa.me/255766972508">
-✆
-</a>
-
-
-</div>
 
 
 <footer>
 
 <p>
-© 2026 NIITE KURWA ELECTRONICS.
-Haki zote zimehifadhiwa.
+© 2026 NIITE KURWA ELECTRONICS
 </p>
 
 <p>
-Ufundi wa Umeme • CCTV • Electric Fence • Solar • Electronics
+Huduma bora • Ubora • Uaminifu
 </p>
 
 </footer>
-<section id="contact" class="contact">
-
-<div class="title">
-
-<h2>
-Wasiliana Nasi
-</h2>
-
-<p>
-Tupo tayari kukuhudumia
-</p>
-
-</div>
 
 
-<div class="contact-box">
-
-<h3>
-NIITE KURWA ELECTRONICS
-</h3>
-
-<p>
-📍 Moshi, Kilimanjaro
-</p>
-
-<p>
-📞 0766 972 508
-</p>
-
-
-<div class="buttons">
-
-<a
-class="btn call"
-href="tel:0766972508">
-📞 Piga Simu Sasa
+<a class="whatsapp"
+href="https://wa.me/255766972508?text=Habari%20NIITE%20KURWA%20ELECTRONICS,%20nahitaji%20huduma"
+target="_blank">
+💬
 </a>
 
 
-<a
-class="btn wa"
-href="https://wa.me/255766972508">
-💬 Tuma WhatsApp
-</a>
+<div class="popup" id="imagePopup">
+
+<span class="close" id="closePopup">
+&times;
+</span>
+
+<img id="popupImage" src="" alt="Picha kubwa">
 
 </div>
 
-</div>
+
+<script>
+
+/* Picha zikibonyezwa ziwe kubwa */
+
+const images = document.querySelectorAll(".gallery img, .product img");
+
+const popup = document.getElementById("imagePopup");
+
+const popupImage = document.getElementById("popupImage");
+
+const closePopup = document.getElementById("closePopup");
 
 
-<!-- RAMANI YA MOSHI MJINI -->
+images.forEach(function(image){
 
-<div style="max-width:800px;margin:35px auto 0;">
+image.addEventListener("click", function(){
 
-<h3 style="text-align:center;color:#062b5b;margin-bottom:15px;">
-📍 Tunapatikana Moshi Mjini
-</h3>
+popup.style.display = "flex";
 
-<iframe
-src="https://www.google.com/maps?q=Moshi,Tanzania&output=embed"
-width="100%"
-height="350"
-style="border:0;border-radius:20px;box-shadow:0 10px 30px #0002;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
+popupImage.src = this.src;
 
-</div>
+});
 
-</section>
+});
+
+
+closePopup.addEventListener("click", function(){
+
+popup.style.display = "none";
+
+});
+
+
+popup.addEventListener("click", function(event){
+
+if(event.target === popup){
+
+popup.style.display = "none";
+
+}
+
+});
+
+
+/* Huduma kwenda WhatsApp */
+
+const serviceSelect = document.getElementById("serviceSelect");
+
+const serviceWhatsapp = document.getElementById("serviceWhatsapp");
+
+
+serviceSelect.addEventListener("change", function(){
+
+let service = this.value;
+
+if(service){
+
+let message = "Habari NIITE KURWA ELECTRONICS, nahitaji huduma ya " + service;
+
+serviceWhatsapp.href =
+"https://wa.me/255766972508?text=" +
+encodeURIComponent(message);
+
+}
+
+});
+
+
+</script>
+
+</body>
+
+  </html>
