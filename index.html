@@ -337,7 +337,47 @@ padding:45px 5%;
 }
 
 }
+.why-us{
+    padding:60px 20px;
+    background:#f5f7fa;
+}
 
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.why-card{
+    background:white;
+    padding:25px 15px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.why-icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.why-card h3{
+    color:#071a2b;
+    margin:10px 0;
+}
+
+.why-card p{
+    color:#666;
+    margin:0;
+}
+
+@media(max-width:600px){
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
 </style>
 </head>
 
